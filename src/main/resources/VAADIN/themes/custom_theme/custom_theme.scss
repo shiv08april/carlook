@@ -1,0 +1,66 @@
+/* Vaadin UI styling based on this source:
+   https://vaadin.com/docs/v8/framework/themes/themes-creating.html */
+
+/* Ignore the IntelliJ error sign for this import statement */
+@import "../valo/valo.scss";
+
+@mixin custom_theme {
+
+  @include valo;
+
+  .v-button {
+    background: #9cd8fa;
+    border-color: #1d7abe;
+  }
+
+  .v-verticallayout-overarchingLayout {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* navigation bar styling */
+
+  .v-slot-navBarLayout {
+    width: 100%;
+    height: auto !important;
+    background-color: #353536;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+  }
+
+  .v-slot-navBarRight {
+    position: absolute;
+    right: 0;
+  }
+
+  .v-menubar-menuitem-activeMenuItem {
+    border-top-style: solid !important;
+    border-top-width: 2px !important;
+    border-top-color: #5f92f9 !important;
+    background: #454444 !important;
+  }
+
+  .v-menubar {
+    border: 0;
+  }
+
+  .v-menubar > .v-menubar-menuitem {
+    border: 0;
+    background-color: #353536;
+    color: ghostwhite;
+  }
+
+  .v-menubar > .v-menubar-menuitem:first-child{
+    border-radius: 0;
+  }
+
+  .v-menubar > .v-menubar-menuitem:last-child {
+    border-radius: 0;
+  }
+
+  .v-menubar > .v-menubar-menuitem:first-child:last-child {
+    border-radius: 0;
+  }
+}
